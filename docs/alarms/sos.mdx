@@ -1,0 +1,28 @@
+---
+sidebar_position: 2
+---
+
+import sos_button from "../../static/img/screenshots/alarms/sos-button.png";
+import ScreenshotOSTabs from "../../src/components/ScreenshotOSTabs";
+
+# SOS
+
+The red SOS button allows you to send an SOS alarm to race control.
+
+## Sending an SOS
+
+1. Press and hold the red SOS button in the left side of the [main page](../main_interface).
+
+   <div style={{ textAlign: "center", padding: 30 }}>
+     <img src={sos_button} width={100} />
+   </div>
+
+2. A countdown will be displayed, keep holding the button.
+
+<ScreenshotOSTabs page="alarms" img="timer-sos" width={300} />
+
+3. You can either specify a reason for the SOS alarm or tap outside and go back to the main interface.
+
+<ScreenshotOSTabs page="alarms" img="sos-choices" width={300} />
+
+4. When your SOS message is received by race control, you'll receive an acknowledgment in your [Messages](../../chat).

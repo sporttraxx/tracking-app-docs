@@ -1,0 +1,100 @@
+---
+---
+
+import ScreenshotOSTabs from "../../src/components/ScreenshotOSTabs";
+import earth from "../../static/img/icons/earth-sharp.png";
+import chat from "../../static/img/icons/chatbubble-ellipses-outline.png";
+import phone from "../../static/img/icons/call-outline.png";
+import settings from "../../static/img/icons/cog-outline.png";
+
+# Main page
+
+This is the main page of the application.
+
+<ScreenshotOSTabs page="main_page" img="map-active" width={300} />
+
+There are 4 buttons to navigate through the different parts of the application and access different features:
+
+<li style={{ listStyle: "none" }}>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={earth} width={24} style={{ marginRight: 5 }} />
+    Map/HUD
+  </div>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={chat} width={24} style={{ marginRight: 5 }} />
+    Messages
+  </div>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={phone} width={24} style={{ marginRight: 5 }} />
+    Phone call
+  </div>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={settings} width={24} style={{ marginRight: 5 }} />
+    Settings
+  </div>
+</li>
+
+## Map/HUD interface
+
+This is the main part of the application. There are two possible views:
+
+- [Map view](#map-view)
+- [HUD view](#hud-view)
+
+<div style={{ marginBottom: 20 }}>
+  <span>
+    By default, the HUD view is displayed. To switch between map and HUD, use
+    the
+  </span>{" "}
+  <img src={earth} width={24} syle={{ left: 20 }} /> <span>button.</span>
+</div>
+
+:::caution Important
+It is reccomended to display the HUD as opposed to the map when not necessary, since the continuous rendering and updating of the map requires more battery power than the HUD.
+:::
+
+### Map view
+
+Very similar to any navigation application, the map interface allows you to follow your location on a map, to see the surrounding area and change the map's layer type.
+Your current speed and the speed limit (if enabled) is shown in the top-left corner of the screen.
+
+<ScreenshotOSTabs page="main_page" img="map-inactive" width={300} />
+
+### HUD view
+
+In the HUD view there is no map and it only shows some information about you, the current speed and the current time.
+
+<ScreenshotOSTabs page="main_page" img="hud" width={300} />
+
+## Messages
+
+<div>
+  <span>With the</span> <img src={chat} width={24} syle={{ left: 20 }} />{" "}
+  <span>
+    {" "}
+    button you can navigate to your chat with race control. A badge will be displayed
+    whenever new messages are received.
+  </span>
+</div>
+
+See the [Messages](../chat) page for further details.
+
+## Phone call
+
+<div>
+  <span>With the</span> <img src={phone} width={24} syle={{ left: 20 }} />{" "}
+  <span>
+    {" "}
+    button you can directly call the emergency number (if provided by the event organizer)
+    from within the app, instead of typing it in your phone's dialer.
+  </span>
+</div>
+
+## Settings
+
+<div>
+  <span>With the</span> <img src={settings} width={24} syle={{ left: 20 }} />{" "}
+  <span> button you can navigate to the app settings.</span>
+</div>
+
+See the [Settings](../settings) page for further details.

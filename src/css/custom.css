@@ -1,0 +1,49 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0d7abc;
+  --ifm-color-primary-dark: #0c6ea9;
+  --ifm-color-primary-darker: #0b68a0;
+  --ifm-color-primary-darkest: #095584;
+  --ifm-color-primary-light: #0e86cf;
+  --ifm-color-primary-lighter: #0f8cd8;
+  --ifm-color-primary-lightest: #169def;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #33a9f1;
+  --ifm-color-primary-dark: #189def;
+  --ifm-color-primary-darker: #1096e8;
+  --ifm-color-primary-darkest: #0d7cbf;
+  --ifm-color-primary-light: #4eb5f3;
+  --ifm-color-primary-lighter: #5cbaf4;
+  --ifm-color-primary-lightest: #85ccf7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.tabs {
+  justify-content: center;
+}
+
+.tabs__item {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.stores {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-img {
+  max-width: 200px;
+}

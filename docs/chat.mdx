@@ -1,0 +1,59 @@
+---
+sidebar_position: 5
+---
+
+import ScreenshotOSTabs from "../src/components/ScreenshotOSTabs";
+
+# Messages
+
+With Tracky you can send free text messages to race control. The interface is pretty basic and similar to nowadays' chat applications.
+On the right you can find the messages and alarms that were sent by you, while on the left side you find the ones that you received from race control.
+
+<ScreenshotOSTabs page="chat" img="chat" width={300} />
+
+:::caution Important
+In order to send and receive messages, tracking must be active.
+:::
+
+## Colors
+
+Messages have different background colors:
+
+- <span
+    style={{
+      background: "#f13a59",
+      color: "white",
+      padding: 5,
+      borderRadius: 5,
+    }}
+  >
+    Red
+  </span> : either an SOS, an SOS acknowledgment or a RED FLAG.
+  <div style={{ height: 5 }}></div>
+- <span
+    style={{
+      background: "#8bc34a",
+      color: "white",
+      padding: 5,
+      borderRadius: 5,
+    }}
+  >
+    Green
+  </span> : an OK alarm that you sent to race control.
+  <div style={{ height: 5 }}></div>
+- <span
+    style={{
+      background: "#0e88d3",
+      color: "white",
+      padding: 5,
+      borderRadius: 5,
+    }}
+  >
+    Blue
+  </span> : a free text that you sent to race control.
+  <div style={{ height: 5 }}></div>
+- <span
+    style={{ background: "gray", color: "white", padding: 5, borderRadius: 5 }}
+  >
+    Gray
+  </span> : a message received from race control.
