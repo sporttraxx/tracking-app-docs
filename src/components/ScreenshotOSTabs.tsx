@@ -25,8 +25,8 @@ export default function ScreenshotOSTabs({
           <div style={{ textAlign: "center" }}>
             <ThemedImage
               sources={{
-                light: useBaseUrl(`${SCREENSHOT_FLD_ANDROID}${img}-light.png`),
-                dark: useBaseUrl(`${SCREENSHOT_FLD_ANDROID}${img}-dark.png`),
+                light: useBaseUrl(`${SCREENSHOT_FLD_ANDROID}${img}-light.jpg`),
+                dark: useBaseUrl(`${SCREENSHOT_FLD_ANDROID}${img}-dark.jpg`),
               }}
               width={width}
             />
