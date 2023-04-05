@@ -1,0 +1,123 @@
+---
+---
+
+import ScreenshotOSTabs from "@site/src/components/ScreenshotOSTabs";
+import earth from "@site/static/img/icons/earth-sharp.png";
+import chat from "@site/static/img/icons/chatbubble-ellipses-outline.png";
+import phone from "@site/static/img/icons/call-outline.png";
+import settings from "@site/static/img/icons/cog-outline.png";
+
+# Pagina principale
+
+Questa è la pagina principale della applicazione.
+:::caution Importante
+Tracky può lavorare anche in Background mode. Accertati
+di non chiudere accidentalmente la app se questa stava lavorando in
+background.
+:::
+
+<ScreenshotOSTabs page="main_page" img="map-active" width={300} />
+
+## Start/stop tracking
+
+Nella parte inderiore dello schermo si trova il pulsante Play/Pause, il più
+importante della app che consente la tua localizzazione.
+:::caution Importante
+Solo se il tuo tracking è attivo potrai trasmettere allarmi e
+ricevere messaggi.
+:::
+
+## Navigazione
+
+In fondo alla schermata vi sono 4 pulsanti per navigare attraverso le
+varie sezioni della app:
+
+<li style={{ listStyle: "none" }}>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={earth} width={24} style={{ marginRight: 5 }} />
+    Map/HUD
+  </div>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={chat} width={24} style={{ marginRight: 5 }} />
+    Messages
+  </div>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={phone} width={24} style={{ marginRight: 5 }} />
+    Phone call
+  </div>
+  <div style={{ display: "flex", marginTop: 5, marginBottom: 5 }}>
+    <img src={settings} width={24} style={{ marginRight: 5 }} />
+    Settings
+  </div>
+</li>
+
+## Map/HUD
+
+Vi sono due opzioni di utilizzo dell'app:
+
+- [Map view](#map-view)
+- [HUD view](#hud-view)
+
+<div style={{ marginBottom: 20 }}>
+  <span>
+    Di default la app parte con la modalità HUD. Puoi commutare tra Map e HUD
+    con il pulsante
+  </span>{" "}
+  <img src={earth} width={24} syle={{ left: 20 }} /> <span>.</span>
+</div>
+
+:::caution Importante
+Si raccomanda di usare principalmente la modalità HUD, in
+quanto l’uso di mappe richiede più batteria.
+:::
+
+### Map view
+
+Similarmente a molte app di navigazione, questa interfaccia cartografica
+mostra la tua posizione sulla mappa. La tua attuale velocità e i limiti di
+velocità della zona (se attivati) vengono mostrati nell’ angolo in alto a
+sinistra.
+
+<ScreenshotOSTabs page="main_page" img="map-inactive" width={300} />
+
+### HUD view
+
+Nella modalità HUD non esiste una mappa e vengono mostrate solo
+alcune informazioni quali velocità attuale e ora corrente.
+
+<ScreenshotOSTabs page="main_page" img="hud" width={300} />
+
+## Messages
+
+<div>
+  <span>Con il pulsante</span> <img src={chat} width={24} syle={{ left: 20 }} />{" "}
+  <span>
+    {" "}
+    entri nella sezione che permette la chat conla direzione gara. Ogni volta che
+    ricevi un messaggio ti verrà mostrata una spunta sulla icona.
+  </span>
+</div>
+
+Vedi la sezione [Messages](../chat) per ulteriori dettagli.
+
+## Phone call
+
+<div>
+  <span>Con il pulsante</span>{" "}
+  <img src={phone} width={24} syle={{ left: 20 }} />{" "}
+  <span>
+    {" "}
+    puoi chiamare il numero di emergenza (se fornito dall'organizzatore) direttamente
+    dalla app.
+  </span>
+</div>
+
+## Settings
+
+<div>
+  <span>Con il pulsante</span>{" "}
+  <img src={settings} width={24} syle={{ left: 20 }} />{" "}
+  <span> puoi navigare nei settaggi della app.</span>
+</div>
+
+Vedi la sezione [Settings](../settings) per ulteriori dettagli.

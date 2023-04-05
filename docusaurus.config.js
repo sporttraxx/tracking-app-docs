@@ -23,7 +23,15 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "it"],
+    localeConfigs: {
+      en: {
+        label: "English",
+      },
+      it: {
+        label: "Italiano",
+      },
+    },
   },
 
   themes: [
@@ -36,6 +44,7 @@ const config = {
         hashed: true,
         indexBlog: false,
         docsRouteBasePath: "/",
+        language: ["en", "it"],
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
@@ -76,6 +85,7 @@ const config = {
         logo: {
           src: "img/app-icon.png",
         },
+        items: [{ type: "localeDropdown", position: "right" }],
         hideOnScroll: true,
       },
       footer: {

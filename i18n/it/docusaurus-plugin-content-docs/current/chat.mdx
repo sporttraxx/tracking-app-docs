@@ -1,0 +1,60 @@
+---
+sidebar_position: 5
+---
+
+import ScreenshotOSTabs from "@site/src/components/ScreenshotOSTabs";
+
+# Messages
+
+ConTracky puoi trasmettere e ricevere messaggi di testo al pari di molte
+altre app di chat. Sulla sinistra ti vengono mostrati i messaggi o allarmi
+trasmessi da te, sulla destra quelli ricevuti dalla direzione gara.
+
+<ScreenshotOSTabs page="chat" img="chat" width={300} />
+
+:::caution Importante
+Per mandare o ricevere messaggi, il tracking deve essere attivo.
+:::
+
+## Colori
+
+I messaggi hanno diversi colori:
+
+- <span
+    style={{
+      background: "#f13a59",
+      color: "white",
+      padding: 5,
+      borderRadius: 5,
+    }}
+  >
+    Red
+  </span> : un SOS, una conferma di ricezione SOS o un RED FLAG
+  <div style={{ height: 5 }}></div>
+- <span
+    style={{
+      background: "#8bc34a",
+      color: "white",
+      padding: 5,
+      borderRadius: 5,
+    }}
+  >
+    Green
+  </span> : un OK che hai trasmesso alla direzione gara.
+  <div style={{ height: 5 }}></div>
+- <span
+    style={{
+      background: "#0e88d3",
+      color: "white",
+      padding: 5,
+      borderRadius: 5,
+    }}
+  >
+    Blue
+  </span> : un messaggio di testo che hai trasmesso alla direzione gara.
+  <div style={{ height: 5 }}></div>
+- <span
+    style={{ background: "gray", color: "white", padding: 5, borderRadius: 5 }}
+  >
+    Gray
+  </span> : un messaggio ricevuto dalla direzione gara.
