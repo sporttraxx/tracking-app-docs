@@ -65,7 +65,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
@@ -80,12 +80,24 @@ const config = {
           autoCollapseCategories: true,
         },
       },
+      metadata: [
+        {
+          name: "viewport",
+          content: "width=device-width,initial-scale=1,user-scalable=0",
+        },
+      ],
       navbar: {
         title: "Tracky",
         logo: {
           src: "img/app-icon.png",
         },
-        items: [{ type: "localeDropdown", position: "right" }],
+        items: [
+          {
+            type: "localeDropdown",
+            position: "right",
+            className: "language",
+          },
+        ],
         hideOnScroll: true,
       },
       footer: {
@@ -101,6 +113,8 @@ const config = {
         respectPrefersColorScheme: true,
       },
     }),
+
+  plugins: ["docusaurus-plugin-sass"],
 };
 
 module.exports = config;

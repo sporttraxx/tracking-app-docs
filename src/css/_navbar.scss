@@ -1,0 +1,18 @@
+@media (max-width: 996px) {
+  .navbar__items--right {
+    .navbar__item {
+      display: inline-block;
+      margin-right: 150px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__items--right {
+    .navbar__item {
+      display: inline-block;
+      margin-right: 50px;
+      font-size: 0;
+    }
+  }
+}
