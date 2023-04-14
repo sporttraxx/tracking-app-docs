@@ -93,9 +93,19 @@ const config = {
         },
         items: [
           {
+            label: "Docs",
+            to: "/intro/",
+            position: "left",
+          },
+          {
+            label: "Privacy",
+            to: "/privacy/",
+            position: "left",
+          },
+          {
             type: "localeDropdown",
             position: "right",
-            className: "language",
+            className: "icon-link language",
           },
         ],
         hideOnScroll: true,
